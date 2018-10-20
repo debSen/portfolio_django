@@ -128,4 +128,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR
 
-ALLOWED_HOSTS = [‘0.0.0.0’, ‘localhost’, ‘debportfolio.herokuapp.com’]
+# ALLOWED_HOSTS = [‘0.0.0.0’, ‘localhost’, ‘debportfolio.herokuapp.com’]
