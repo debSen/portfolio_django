@@ -9,3 +9,6 @@ def deb(request):
 def detail(request, job_id):
     job_detail = get_object_or_404(Job, pk=job_id)
     return render(request, 'jobs/home.html')
+
+def blog(request):
+    return render(request, 'jobs/blog.html')
