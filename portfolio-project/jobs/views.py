@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Job
+from .models import Blog
 
 # Create your views here.
 def deb(request):
@@ -11,4 +12,5 @@ def detail(request, job_id):
     return render(request, 'jobs/home.html')
 
 def blog(request):
-    return render(request, 'jobs/blog.html')
+    blogs = Blog.objects
+    return render(request, 'jobs/blog.html', {'blogs': blogs})
